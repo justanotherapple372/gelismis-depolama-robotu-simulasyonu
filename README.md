@@ -15,7 +15,7 @@ Proje kapsamında, bekleme süreleri ve robot kullanım oranları analiz edilere
     - **matplotlib:** Simülasyon sonuçlarının grafiksel olarak görselleştirilmesini sağlayan kütüphane.
 - **Veri Seti:**
     - Gerçek bir veri seti kullanılmamıştır yani kendimiz oluşturduk. Bunun yerine yapay (sentetik) veri seti oluşturulmuştur.
-    -  Ürün geliş zamanları Üstel Dağılım (Exponential Distribution) kullanılarak random.expovariate() fonksiyonu ile üretilmiştir. Taşıma süreleri Düzgün Dağılım (Uniform Distribution) kullanılarak random.uniform(min, max) fonksiyonu ile rastgele oluşturulmuştur.
+    -  Ürün geliş zamanları **Üstel Dağılım (Exponential Distribution)** kullanılarak **random.expovariate()** fonksiyonu ile üretilmiştir. Taşıma süreleri **Düzgün Dağılım (Uniform Distribution)** kullanılarak **random.uniform(min, max)** fonksiyonu ile rastgele oluşturulmuştur.
 - **Görselleştirme:** Simülasyon sonuçlarının analizinde **matplotlib** kütüphanesi kullanılmıştır. Bekleme sürelerinin dağılımını göstermek için **histogram (plt.hist)** kullanılmıştır. Robot kullanımının zamana bağlı değişimini göstermek için **step chart (plt.step)** tercih edilmiştir. 
 - **GUI (Arayüz) Geliştirme:**
     - Projenin görselleştirilmiş kullanıcı arayüzü için **Streamlit** kullanılması planlanmaktadır.
