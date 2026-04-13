@@ -19,10 +19,10 @@ Proje kapsamında, bekleme süreleri ve robot kullanım oranları analiz edilere
 - **Görselleştirme:** Simülasyon sonuçlarının analizinde **matplotlib** kütüphanesi kullanılmıştır. Bekleme sürelerinin dağılımını göstermek için **histogram (plt.hist)** kullanılmıştır. Robot kullanımının zamana bağlı değişimini göstermek için **step chart (plt.step)** tercih edilmiştir. 
 - **GUI (Arayüz) Geliştirme:**
     - Projenin görselleştirilmiş kullanıcı arayüzü için **Streamlit** kullanılması planlanmaktadır.
-    - Streamlit, Python tabanlı olması sayesinde simülasyon modeline doğrudan entegre edilebilmekte ve ek bir backend/frontend ayrımı gerektirmemektedir.
+    - **Streamlit**, Python tabanlı olması sayesinde simülasyon modeline doğrudan entegre edilebilmekte ve ek bir backend/frontend ayrımı gerektirmemektedir.
     - Kullanıcıdan robot sayısı, ürün geliş süresi gibi parametrelerin kolayca alınmasını ve sonuçların anlık olarak görselleştirilmesini sağlamaktadır.
     - Matplotlib ile üretilen grafiklerin arayüz üzerinde dinamik olarak gösterilmesine imkan tanımaktadır.
-    - Projenin final aşamasında, simülasyon modeline entegre edilmiş bir Streamlit tabanlı arayüz eklenerek kullanıcı deneyimi geliştirilmesi planlanmaktadır. 
+    - Projenin final aşamasında, simülasyon modeline entegre edilmiş bir **Streamlit** tabanlı arayüz eklenerek kullanıcı deneyimi geliştirilmesi planlanmaktadır. 
 
 
 
