@@ -119,7 +119,13 @@ Sisteme dışarıdan gelen ürün akışını temsil eden **Olay Üretecidir (Ev
 | **urun_sureci**   | Fonksiyon       | Ürünün sistem içindeki tüm mantıksal adımları.           |
 
 
-## Örnek Ayarlar ile Değerlendirme:
+## Örnek Kullanım ve Varsayılan Ayarlar ile Değerlendirme:
+
+Programı çalıştırmak için **ADS.py** dosyasını çalıştırıyoruz ve bizden aşağıdaki görüntüdeki gibi girdi isteyecek:
+
+![Örnek Çalıştırma ve Girdiler](./grafikler/OrnekCalıstırma.PNG)
+
+Varsayılan ayarlarla yani aşağıdaki değerleri girdi olarak verdiğimizde simülasyonumuz çalışacaktır.
 
 -   **Depodaki Robot Sayısı:** 2 adet
 
@@ -132,9 +138,9 @@ Sisteme dışarıdan gelen ürün akışını temsil eden **Olay Üretecidir (Ev
 -   **Simülasyon Toplam Süre:** 200 dakika
 
 
-![Anlık Kaynak Kullanım Grafigi](./imajlar/AnlıkKaynakKullanımGrafigi.PNG)
+![Anlık Kaynak Kullanım Grafigi](./grafikler/AnlıkKaynakKullanımGrafigi.PNG)
 
-![Bekleme Suresi Dağılım Analizi](./imajlar/BeklemeSuresiDagilimAnalizi.PNG)
+![Bekleme Suresi Dağılım Analizi](./grafikler/BeklemeSuresiDagilimAnalizi.PNG)
 
 ## SİSTEM ANALİZİ VE GRAFİKSEL DEĞERLENDİRME:
 Simülasyon çıktıları olarak üretilen grafikler, akıllı depo sisteminin operasyonel verimliliğini gösterir. Bu veriler aşağıdaki şekilde analiz edilmiştir:
