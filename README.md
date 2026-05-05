@@ -58,9 +58,9 @@ Raporun en önemli kısmını oluşturan grafiklerin teknik açıklamaları şö
 Bu senaryoda amacımız, robotların sürekli %100 dolulukta çalışmasını ve bekleme kuyruğunun zamanla doğrusal olarak artmasını
 sağlamaktır
 
-![Simülasyon Diyagramı](grafikler/1inputlar.png)
+    ![Simülasyon Diyagramı](grafikler/1inputlar.PNG)
 
-![Simülasyon Diyagramı](grafikler/1simulasyonOzet.png)
+![Simülasyon Diyagramı](grafikler/1simulasyonOzet.PNG)
 
-![Simülasyon Diyagramı](grafikler/1grafik.png)
+![Simülasyon Diyagramı](grafikler/1grafik.PNG)
 
