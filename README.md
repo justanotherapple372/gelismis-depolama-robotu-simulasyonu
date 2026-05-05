@@ -1,29 +1,22 @@
-# BENZETİM PROGRAMLAMA: AKILLI DEPOLAMA SİSTEMİ (ADS)
+# AKILLI DEPO ROBOT ATAMA SİSTEMİ SİMÜLASYONU ANALİZ RAPORU
 
-Bu proje, bir akıllı depo içerisindeki ürün giriş ve yerleştirme süreçlerini **Ayrık Olay Simülasyonu (Discrete Event Simulation)** yöntemiyle modellemektedir. Simülasyonun amacı, belirli bir kaynak (robot) sayısı ve değişken geliş hızları altında sistemin performansını (bekleme süreleri ve kaynak kullanımı) analiz etmektir.
+## 1. Giriş ve Amaç
+Bu çalışma, bir akıllı depo içerisinde farklı ağırlıklara sahip ürünlerin, kendi
+ağırlıklarına göre atanmış robotlar tarafından taşınma sürecini
+modellemektedir.
 
-## Projenin Çözdüğü Problem:
+**Simülasyonun temel amacı;** belirlenen robot sayıları ve ürün geliş hızları
+altında sistemin darboğazlarını tespit etmek, bekleme sürelerini analiz etmek
+ve kaynak kullanım verimliliğini ölçmektir.
 
-Bu proje, akıllı depo sistemlerinde sınırlı sayıda robotun artan ve düzensiz iş yükü altında verimli kullanılamaması sorununu ele almaktadır. Bu durum, ürünlerin bekleme sürelerinin uzamasına ve sistemde darboğazların oluşmasına yol açmaktadır.
-Proje kapsamında, bekleme süreleri ve robot kullanım oranları analiz edilerek sistem performansı değerlendirilir ve kapasite yetersizlikleri ortaya konur.
+## 2. Sistem Mimarisi ve Metodoloji
 
-
-## Kullanılan Teknoloji, Kütüphane, Veri Seti, Görselleştirme ve GUI:
-
-- **Python:** Simülasyon modelinin geliştirilmesi için kullanılan ana programlama dili
-    - **simpy:** Ayrık olay simülasyonu (Discrete Event Simulation) modelini oluşturmak için kullanılan temel kütüphane.
-    - **matplotlib:** Simülasyon sonuçlarının grafiksel olarak görselleştirilmesini sağlayan kütüphane.
-- **Veri Seti:**
-    - Gerçek bir veri seti kullanılmamıştır yani kendimiz oluşturduk. Bunun yerine yapay (sentetik) veri seti oluşturulmuştur.
-    -  Ürün geliş zamanları **Üstel Dağılım (Exponential Distribution)** kullanılarak **random.expovariate()** fonksiyonu ile üretilmiştir. Taşıma süreleri **Düzgün Dağılım (Uniform Distribution)** kullanılarak **random.uniform(min, max)** fonksiyonu ile rastgele oluşturulmuştur.
-- **Görselleştirme:** Simülasyon sonuçlarının analizinde **matplotlib** kütüphanesi kullanılmıştır. Bekleme sürelerinin dağılımını göstermek için **histogram (plt.hist)** kullanılmıştır. Robot kullanımının zamana bağlı değişimini göstermek için **step chart (plt.step)** tercih edilmiştir. 
-- **GUI (Arayüz) Geliştirme:**
-    - Projenin görselleştirilmiş kullanıcı arayüzü için **Streamlit** kullanılması planlanmaktadır.
-    - **Streamlit**, Python tabanlı olması sayesinde simülasyon modeline doğrudan entegre edilebilmekte ve ek bir backend/frontend ayrımı gerektirmemektedir.
-    - Kullanıcıdan robot sayısı, ürün geliş süresi gibi parametrelerin kolayca alınmasını ve sonuçların anlık olarak görselleştirilmesini sağlamaktadır.
-    - Matplotlib ile üretilen grafiklerin arayüz üzerinde dinamik olarak gösterilmesine imkan tanımaktadır.
-    - Projenin final aşamasında, simülasyon modeline entegre edilmiş bir **Streamlit** tabanlı arayüz eklenerek kullanıcı deneyimi geliştirilmesi planlanmaktadır. 
-
+Simülasyon, **Python dili** ve **SimPy** kütüphanesi kullanılarak geliştirilmiştir. Sistem üç ana bileşenden oluşmaktadır:
+- Varlıklar (Entities): Hafif (A), Orta (B) ve Ağır (C) ağırlıklara sahip tipindeki ürün veya içinde ürün olan konteynerler.
+- Kaynaklar (Resources): Projedeki robotları temsil eder.
+- Süreçler:
+    - Üretici (Producer): Ürünlerin gelişini üstel dağılıma göre tetikler.
+    - Taşıma (Process): Ürünlerin robotlar tarafından taşınmasını uniform dağılıma göre simüle eder.
 
 
 ## Model Parametreleri ve Metodoloji: 
