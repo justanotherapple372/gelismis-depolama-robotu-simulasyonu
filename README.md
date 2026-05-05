@@ -30,3 +30,20 @@ Simülasyon, **Python dili** ve **SimPy** kütüphanesi kullanılarak geliştiri
 - **Görselleştirme:** Bekleme sürelerinin dağılımını göstermek için **histogram** kullanılmıştır. Robot kullanım oranlarını zamana
 bağlı değişimini göstermek için **step chart** tercih edilmiştir.
 - **UI (Arayüz):** Projenin görselleştirilmiş kullanıcı arayüzü için **Streamlit** kullanılması planlanmaktadır.
+
+## 4. Parametre Tanımlamaları
+
+Sistem, kullanıcıdan alınan şu değişkenler üzerine kurulmuştur:
+- **Geliş Aralığı:** Ürünlerin sisteme giriş sıklığı (dk).
+- **Taşıma Süresi (Min/Max):** Robotun bir ürünü teslim etme süresi.
+- **Simülasyon süresi:** Toplam simüle süresi.
+
+## 5. Algoritma Akışı:
+
+Sistemin çalışma mantığı aşağıdaki adımları izlemektedir:
+
+- 1) **Üretici (Producer):** Belirlenen ortalama süreye göre rastgele zamanlarda ürün nesneleri oluşturur.
+- 2) **Sıralama (Queuing):** Gelen ürün, boşta bir robot olup olmadığını kontrol eder. Eğer tüm robotlar meşgulse, ürün "talep"
+sırasında bekler.
+- 3) **İşlem (Processing):** Robot tahsis edildiğinde, taşıma süresi kadar zaman geçer.
+- 4) **Serbest Bırakma (Release):** İşlem bittiğinde robot serbest bırakılır ve sıradaki ürün işleme alınır.
