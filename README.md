@@ -42,8 +42,8 @@ Sistem, kullanıcıdan alınan şu değişkenler üzerine kurulmuştur:
 
 Sistemin çalışma mantığı aşağıdaki adımları izlemektedir:
 
-- 1) **Üretici (Producer):** Belirlenen ortalama süreye göre rastgele zamanlarda ürün nesneleri oluşturur.
-- 2) **Sıralama (Queuing):** Gelen ürün, boşta bir robot olup olmadığını kontrol eder. Eğer tüm robotlar meşgulse, ürün "talep"
+1) **Üretici (Producer):** Belirlenen ortalama süreye göre rastgele zamanlarda ürün nesneleri oluşturur.
+2) **Sıralama (Queuing):** Gelen ürün, boşta bir robot olup olmadığını kontrol eder. Eğer tüm robotlar meşgulse, ürün "talep"
 sırasında bekler.
-- 3) **İşlem (Processing):** Robot tahsis edildiğinde, taşıma süresi kadar zaman geçer.
-- 4) **Serbest Bırakma (Release):** İşlem bittiğinde robot serbest bırakılır ve sıradaki ürün işleme alınır.
+3) **İşlem (Processing):** Robot tahsis edildiğinde, taşıma süresi kadar zaman geçer.
+4) **Serbest Bırakma (Release):** İşlem bittiğinde robot serbest bırakılır ve sıradaki ürün işleme alınır.
