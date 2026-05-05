@@ -55,12 +55,28 @@ Raporun en önemli kısmını oluşturan grafiklerin teknik açıklamaları şö
 
 ## 7. Senaryo #1: Yetersiz Robot Sayısı
 
-Bu senaryoda amacımız, robotların sürekli %100 dolulukta çalışmasını ve bekleme kuyruğunun zamanla doğrusal olarak artmasını
-sağlamaktır
+Bu senaryoda amacımız, robotların sürekli %100 dolulukta çalışmasını ve bekleme kuyruğunun zamanla doğrusal olarak artmasını sağlamaktır
 
-    ![Simülasyon Diyagramı](grafikler/1inputlar.PNG)
+![Simülasyon Girişleri](grafikler/1inputlar.PNG)
+
+## 7. Senaryo #1: Analiz
+
+Bu değerlerle grafiklere baktığında, **"Doluluk Oranı"** grafiğinin sürekli %100 çizgisinde sabitlendiğini ve bekleme sürelerinin çok yüksek çıktığını göreceksin. 
 
 ![Simülasyon Diyagramı](grafikler/1simulasyonOzet.PNG)
 
 ![Simülasyon Diyagramı](grafikler/1grafik.PNG)
 
+## 8. Senaryo #2: Yetersiz Robot Sayısı
+
+Burada sistem teorik olarak kapasiteye sahip olsa da, işlem sürelerindeki yüksek değişkenlik nedeniyle bazı ürünlerin çok beklemesini sağlarız.
+
+![Simülasyon Girişleri](grafikler/2inputlar.PNG)
+
+## 8. Senaryo #2: Analiz
+
+Histogram grafiğine baktığında, verilerin çoğunun solda (kısa sürelerde) toplandığını ama sağa doğru uzayan ince bir "kuyruk" (20- 30-40 dakikalık beklemeler) oluştuğunu göreceksin. Bu, sistemin genel olarak iyi çalıştığını ama varyans (değişkenlik) nedeniyle istisnai gecikmeler yaşandığını kanıtlar.
+
+![Simülasyon Diyagramı](grafikler/2simulasyonOzet.PNG)
+
+![Simülasyon Diyagramı](grafikler/2grafik.PNG)
