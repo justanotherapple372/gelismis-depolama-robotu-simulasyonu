@@ -71,6 +71,28 @@ def depoyu_calistir():
 
     env.run(until=sim_suresi)
 
+
+    # --- SİMÜLASYON ÖZET RAPORU ---
+    print("\n" + "-"*40)
+    print("--- Simülasyon Özet Raporu ---")
+    print("-" * 40)
+    
+    toplam_islenen = 0
+    for tip, veri in istatistikler.items():
+        sayi = len(veri['beklemeler'])
+        toplam_islenen += sayi
+        if sayi > 0:
+            ort_bekleme = sum(veri['beklemeler']) / sayi
+            max_bekleme = max(veri['beklemeler'])
+            print(f"{veri['etiket']}: {sayi} adet işlendi. Ort. Bekleme: {ort_bekleme:.2f} dk | Maks. Bekleme: {max_bekleme:.2f} dk")
+        else:
+            print(f"{veri['etiket']}: Hiç ürün işlenemedi.")
+    
+    print("-" * 40)
+    print(f"TOPLAM İŞLENEN ÜRÜN: {toplam_islenen}")
+    print("-" *40)
+
+
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
 
     for tip, veri in istatistikler.items():
