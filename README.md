@@ -1,13 +1,9 @@
 # AKILLI DEPO ROBOT ATAMA SİSTEMİ SİMÜLASYONU ANALİZ RAPORU
 
 ## 1. Giriş ve Amaç
-Bu çalışma, bir akıllı depo içerisinde farklı ağırlıklara sahip ürünlerin, kendi
-ağırlıklarına göre atanmış robotlar tarafından taşınma sürecini
-modellemektedir.
+Bu çalışma, bir akıllı depo içerisinde farklı ağırlıklara sahip ürünlerin, kendi ağırlıklarına göre atanmış robotlar tarafından taşınma sürecini modellemektedir.
 
-**Simülasyonun temel amacı;** belirlenen robot sayıları ve ürün geliş hızları
-altında sistemin darboğazlarını tespit etmek, bekleme sürelerini analiz etmek
-ve kaynak kullanım verimliliğini ölçmektir.
+**Simülasyonun temel amacı;** belirlenen robot sayıları ve ürün geliş hızları altında sistemin darboğazlarını tespit etmek, bekleme sürelerini analiz etmek ve kaynak kullanım verimliliğini ölçmektir.
 
 ## 2. Sistem Mimarisi ve Metodoloji
 
@@ -27,8 +23,7 @@ Simülasyon, **Python dili** ve **SimPy** kütüphanesi kullanılarak geliştiri
 - **Veri Seti:**
     - Gerçek bir veri seti kullanılmamıştır yani kendimiz oluşturduk.
     - Ürün geliş zamanları **Üstel Dağılım (Exponential Distribution)** ile, taşıma süreleri ise **Düzgün Dağılım (Uniform Distribution)** ile rastgele oluşturulmuştur.
-- **Görselleştirme:** Bekleme sürelerinin dağılımını göstermek için **histogram** kullanılmıştır. Robot kullanım oranlarını zamana
-bağlı değişimini göstermek için **step chart** tercih edilmiştir.
+- **Görselleştirme:** Bekleme sürelerinin dağılımını göstermek için **histogram** kullanılmıştır. Robot kullanım oranlarını zamana bağlı değişimini göstermek için **step chart** tercih edilmiştir.
 - **UI (Arayüz):** Projenin görselleştirilmiş kullanıcı arayüzü için **Streamlit** kullanılması planlanmaktadır.
 
 ## 4. Parametre Tanımlamaları
@@ -43,7 +38,17 @@ Sistem, kullanıcıdan alınan şu değişkenler üzerine kurulmuştur:
 Sistemin çalışma mantığı aşağıdaki adımları izlemektedir:
 
 1) **Üretici (Producer):** Belirlenen ortalama süreye göre rastgele zamanlarda ürün nesneleri oluşturur.
-2) **Sıralama (Queuing):** Gelen ürün, boşta bir robot olup olmadığını kontrol eder. Eğer tüm robotlar meşgulse, ürün "talep"
-sırasında bekler.
+2) **Sıralama (Queuing):** Gelen ürün, boşta bir robot olup olmadığını kontrol eder. Eğer tüm robotlar meşgulse, ürün **"talep"** sırasında bekler.
 3) **İşlem (Processing):** Robot tahsis edildiğinde, taşıma süresi kadar zaman geçer.
 4) **Serbest Bırakma (Release):** İşlem bittiğinde robot serbest bırakılır ve sıradaki ürün işleme alınır.
+
+## Performans Göstergeleri (Metrikler)
+
+Raporun en önemli kısmını oluşturan grafiklerin teknik açıklamaları şöyledir:
+- Bekleme Süreleri Dağılımı (Histogram): Bu grafik, sistemin hizmet kalitesini ölçer.
+    – Verimlilik Göstergesi: Histogramın sol tarafa (0'a yakın) yığılması, sistemin akıcı olduğunu gösterir.
+    – Darboğaz Analizi: Histogramın sağa doğru uzayan bir "kuyruk" (tail) oluşturması, bazı ürünlerin aşırı beklediğini ve sistemin doyuma ulaştığını kanıtlar.
+- Anlık Robot Kullanımı (Step Chart): Bu grafik, kaynağın yani robotların kullanım oranını analiz eder.
+    – Kapasite Planlama: Grafiğin sürekli değerin tavan çizgisi seyretmesi, sistemin yetersiz olduğunu ve daha fazla robot yatırımına ihtiyaç duyulduğunu gösterir.
+    – Durağanlık: Grafikteki dalgalanmalar, sistemin yoğun ve sakin saatlerini ayırt etmemizi sağlar.
+- İşlenen Ürün Sayısı, Ortalama ve Maksimum Bekleme sürelerinin hesaplanması.
