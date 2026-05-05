@@ -42,7 +42,7 @@ Sistemin çalışma mantığı aşağıdaki adımları izlemektedir:
 3) **İşlem (Processing):** Robot tahsis edildiğinde, taşıma süresi kadar zaman geçer.
 4) **Serbest Bırakma (Release):** İşlem bittiğinde robot serbest bırakılır ve sıradaki ürün işleme alınır.
 
-## Performans Göstergeleri (Metrikler)
+## 6. Performans Göstergeleri (Metrikler)
 
 Raporun en önemli kısmını oluşturan grafiklerin teknik açıklamaları şöyledir:
 - Bekleme Süreleri Dağılımı (Histogram): Bu grafik, sistemin hizmet kalitesini ölçer.
@@ -52,3 +52,15 @@ Raporun en önemli kısmını oluşturan grafiklerin teknik açıklamaları şö
     – Kapasite Planlama: Grafiğin sürekli değerin tavan çizgisi seyretmesi, sistemin yetersiz olduğunu ve daha fazla robot yatırımına ihtiyaç duyulduğunu gösterir.
     – Durağanlık: Grafikteki dalgalanmalar, sistemin yoğun ve sakin saatlerini ayırt etmemizi sağlar.
 - İşlenen Ürün Sayısı, Ortalama ve Maksimum Bekleme sürelerinin hesaplanması.
+
+## 7. Senaryo #1: Yetersiz Robot Sayısı
+
+Bu senaryoda amacımız, robotların sürekli %100 dolulukta çalışmasını ve bekleme kuyruğunun zamanla doğrusal olarak artmasını
+sağlamaktır
+
+![Simülasyon Diyagramı](grafikler/1inputlar.png)
+
+![Simülasyon Diyagramı](grafikler/1simulasyonOzet.png)
+
+![Simülasyon Diyagramı](grafikler/1grafik.png)
+
