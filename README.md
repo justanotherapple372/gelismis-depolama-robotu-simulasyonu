@@ -1,6 +1,6 @@
 # 🏢 Akıllı Depo Dijital İkizi Simülasyonu
 
-Bu proje; modern, çok sınıflı ve otonom robotların görev yaptığı akıllı depo sistemlerinin davranışlarını analiz etmek, darboğazları tespit etmek ve kapasite planlaması yapmak için geliştirilmiş **etkileşimli bir ayrık olay simülasyonu**.  
+Bu proje; modern, çok sınıflı ve otonom robotların görev yaptığı akıllı depo sistemlerinin davranışlarını analiz etmek, darboğazları tespit etmek ve kapasite planlaması yapmak için geliştirilmiş etkileşimli bir **ayrık olay simülasyonu**.  
 
 Arka planda **SimPy** ayrık olaylı simülasyon (Discrete-Event Simulation) motorunu kullanırken, ön yüzde kullanıcı etkileşimi ve anlık görselleştirme için **Streamlit** altyapısından faydalanır.
 ---
