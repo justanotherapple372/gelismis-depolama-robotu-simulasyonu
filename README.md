@@ -12,7 +12,6 @@ Arka planda **SimPy** ayrık olaylı simülasyon (Discrete-Event Simulation) mot
 ![SimPy](https://img.shields.io/badge/SimPy-A9A9A9?style=for-the-badge&logo=python-foundation-is-a-member-of-the-python-software-foundation&logoColor=black)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 
 ## 🚀 Öne Çıkan Özellikler
 
