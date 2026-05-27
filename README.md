@@ -5,6 +5,15 @@ Bu proje; modern, çok sınıflı ve otonom robotların görev yaptığı akıll
 Arka planda **SimPy** ayrık olaylı simülasyon (Discrete-Event Simulation) motorunu kullanırken, ön yüzde kullanıcı etkileşimi ve anlık görselleştirme için **Streamlit** altyapısından faydalanır.
 ---
 
+### 🛠️ Kullanılan Teknolojiler ve Paketler
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+![SimPy](https://img.shields.io/badge/SimPy-A9A9A9?style=for-the-badge&logo=python-foundation-is-a-member-of-the-python-software-foundation&logoColor=black)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+
 ## 🚀 Öne Çıkan Özellikler
 
 * **Dinamik Sınıf Yönetimi:** Kullanıcı tanımlı sayıda ürün ve robot sınıfı ($N$ adet sınıf) oluşturabilme.
@@ -60,8 +69,9 @@ Giriş yaptıktan sonra tarayıcınızda otomatik olarak açılan **http://local
 
 Parametre Alanı,Açıklama
 
-Tanımlanacak Sınıf Sayısı|Depodaki bağımsız ürün tipi ve robot filosu varyasyon sayısını belirler.
-Bakım Personeli Sayısı|Yolda kalan robotlara müdahale edebilecek eşzamanlı maksimum teknisyen sayısıdır.
-Kritik Şarj Eşiği (%)|Robotların görev sonrası şarj istasyonuna gitmeye karar verme yüzdesidir.
-Ürün Geliş Aralığı (dk)|İlgili sınıfa ait ürünlerin ortalama geliş sıklığıdır (Poisson akışı).
-Taşıma Süresi Dağılımı|Robotun yükleme noktasından rafa gidiş-dönüş süresinin matematiksel karakteristiğidir.
+Tanımlanacak Sınıf Sayısı | Depodaki bağımsız ürün tipi ve robot filosu varyasyon sayısını belirler.
+--- | ---
+Bakım Personeli Sayısı | Yolda kalan robotlara müdahale edebilecek eşzamanlı maksimum teknisyen sayısıdır.
+Kritik Şarj Eşiği (%) | Robotların görev sonrası şarj istasyonuna gitmeye karar verme yüzdesidir.
+Ürün Geliş Aralığı (dk) | İlgili sınıfa ait ürünlerin ortalama geliş sıklığıdır (Poisson akışı).
+Taşıma Süresi Dağılımı | Robotun yükleme noktasından rafa gidiş-dönüş süresinin matematiksel karakteristiğidir.
