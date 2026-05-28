@@ -5,7 +5,7 @@ Bu proje; modern, çok sınıflı ve otonom robotların görev yaptığı akıll
 Arka planda **SimPy** ayrık olaylı simülasyon (Discrete-Event Simulation) motorunu kullanırken, ön yüzde kullanıcı etkileşimi ve anlık görselleştirme için **Streamlit** altyapısından faydalanır.
 
 
-![dashboard](images/dashboard.png)
+![dashboard](grafikler/dashboard.png)
 
 
 ---
