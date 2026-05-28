@@ -1,4 +1,4 @@
-# 🏢 Akıllı Depo Dijital İkizi Simülasyonu
+# 🏢 Gelişmiş Depolama Robotu Simülasyonu
 
 Bu proje; modern, çok sınıflı ve otonom robotların görev yaptığı akıllı depo sistemlerinin davranışlarını analiz etmek, darboğazları tespit etmek ve kapasite planlaması yapmak için geliştirilmiş etkileşimli bir **ayrık olay simülasyonu**.  
 
